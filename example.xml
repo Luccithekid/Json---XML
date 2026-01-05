@@ -1,0 +1,16 @@
+<student>
+    <fullname>Alex Johnson</fullname>
+    <role>Event Coordinator</role>
+    <school>Central High School</school>
+    <birthDate>2007-3-12</birthDate>
+    <graduationYear>2025</graduationYear>
+    <activityStats>
+    - <12>
+    - <5>
+    - <3>
+    </activityStats>
+    <club>Student Council, National Honor Society, Art Club</club>
+    <awards>Leadership Award 2024  </awards>
+    <awards>Service Award 2024,</awards>
+    <awards>Student of Month (October 2024)</awards>
+</student>
