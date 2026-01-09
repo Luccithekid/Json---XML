@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Test</title>
+    <head>
+
+    </head>
+    <body>
+        <div id="player-info">
+            <!-- Player information will be displayed here -->
+        </div>
+
+        <script>
+            //create a new XMLHttpRequest object
+            const xhr = new XMLHttpRequest();
+            // onlad is an event.. . like a click event
+            xhr.onload = function() {
+                document.getElementById("player-info").innerHTML = xhr.responseText;
+            }
+            
+            xhr.open("GET", "player.json", true)
+            xhr.send();
+        </script>
+    </body>
+</html>
