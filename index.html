@@ -3,25 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AJAX Test</title>
-    <head>
-
+    <title>Baseball Players Cards</title>
+    <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id="player-info">
-            <!-- Player information will be displayed here -->
-        </div>
-
-        <script>
-            //create a new XMLHttpRequest object
-            const xhr = new XMLHttpRequest();
-            // onlad is an event.. . like a click event
-            xhr.onload = function() {
-                document.getElementById("player-info").innerHTML = xhr.responseText;
-            }
-            
-            xhr.open("GET", "player.json", true)
-            xhr.send();
-        </script>
+        <h1>Baseball Legends</h1>
+  
+        <div id="player-cards-container"></div>
+        
+        <footer>
+            Data loaded using XMLHttpRequest
+        </footer>
+        <script src="player.js"></script>
     </body>
 </html>
