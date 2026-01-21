@@ -1,4 +1,3 @@
-//Create XMLHttpRequest object
 const xhr = new XMLHttpRequest();
 
 xhr.onload = function () {
@@ -52,7 +51,7 @@ xhr.onload = function () {
                 ${player.throws}
                 </p>
                 <p><span class="label">Hall of Fame:</span>
-                ${player.halloffame}
+                ${player.hallofFame}
                 </p>
 
                 <p class="label">Career Stats:</p>
@@ -75,5 +74,5 @@ xhr.onload = function () {
     }
 };
 
-xhr.open("GET", "player.json",);
+xhr.open("GET", "player.json"); //make sure your json file is named player.json in VSCode
 xhr.send();
